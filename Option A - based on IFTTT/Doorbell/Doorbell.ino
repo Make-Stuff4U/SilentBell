@@ -303,7 +303,7 @@ void blinking() {
       if (dutyCycleStep == 255) {gradient = !gradient;}
     }
     
-    dutyCycle = 255*pow(2,(((float)dutyCycleStep/255)*3)); // Exponential growth and fade. Need to cast into float otherwise will get integer result for intermediate calculations.
+    dutyCycle = (255/8)*pow(2,(((float)dutyCycleStep/255)*3)); // Exponential growth and fade. Need to cast into float otherwise will get integer result for intermediate calculations.
 
   }
 }
