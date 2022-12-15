@@ -9,3 +9,5 @@ The D4 pin of a ESP8266 NodeMCU device is internally pulled up high in the set u
 
 **Software**  
 Comprehensive software instructions are provided [here](https://github.com/Make-Stuff4U/SilentBell/blob/main/Instructions.pdf).
+
+![This is an image.](https://github.com/Make-Stuff4U/SilentBell/blob/main/SilentBell.PNG)
