@@ -1,5 +1,5 @@
 // IMPORTANT! The BLYNK_TEMPLATE_ID and BLYNK_DEVICE_NAME must be updated by user and uploaded onto the NodeMCU via USB cable before use of this product!
-#define BLYNK_TEMPLATE_ID "xxx"
+#define BLYNK_TEMPLATE_ID "TMPL6fAQeqiD"
 #define BLYNK_DEVICE_NAME "Doorbell"
 
 #define BLYNK_FIRMWARE_VERSION "0.1.0"
@@ -94,7 +94,7 @@ void blinking() {
       if (dutyCycleStep == 255) {gradient = !gradient;}
     }
     
-    dutyCycle = 255*pow(2,(((float)dutyCycleStep/255)*3)); // Exponential growth and fade. Need to cast into float otherwise will get integer result for intermediate calculations.
+    dutyCycle = (255/8)*pow(2,(((float)dutyCycleStep/255)*3)); // Exponential growth and fade. Need to cast into float otherwise will get integer result for intermediate calculations.
 
   }
 }
